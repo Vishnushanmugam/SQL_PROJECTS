@@ -74,6 +74,7 @@ alter table members modify ph_number bigint;
 
 describe members;
 
+
 -- TRIGGER FOR BOOK CHECK OUT TABLE
 DELIMITER //
 create trigger after_book_checkout
@@ -127,7 +128,6 @@ insert into check_in (book_id, mem_id, book_name, mem_name) value(1502, 102,"198
 select * from book_tracker;
 
 select * from check_in;
-
 
 select * from library_books where publish_year <1960;
 
